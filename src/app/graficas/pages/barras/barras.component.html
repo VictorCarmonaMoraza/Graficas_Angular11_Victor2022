@@ -1,0 +1,20 @@
+<h1>Gráfica de barras</h1>
+<hr>
+
+<div class="row">
+  <div class="col">
+     <div style="display: block;">
+  <canvas baseChart
+    [datasets]="barChartData"
+    [labels]="barChartLabels"
+    [options]="barChartOptions"
+    [legend]="barChartLegend"
+    [chartType]="barChartType">
+  </canvas>
+  <!--Lo he quitado porque no es necesario--><!--[plugins]="barChartPlugins"-->
+</div>
+<div>
+    <button  (click)="randomize()" class="btn btn-primary float-end">Actualizar</button>
+    </div>
+  </div>
+</div>
